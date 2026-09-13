@@ -1,0 +1,16 @@
+from time import sleep
+print("=-=" * 25)
+print("RADAR ELETRÔNICO")
+print("=-=" * 25)
+velocidade = float(input("Qual a velocidade do carro? "))
+print("PROCESSANDO...")
+sleep(3)
+if velocidade >  80:
+    print("=-=" * 25)
+    print("Você ultrapassou o limite de velocidade")
+    print("=-=" * 25)
+    multa = velocidade * 7
+    excedido = velocidade - 80
+    print(f"Você recebeu uma multa de R${multa} por ter excedido {excedido}KM da velocidade permitida")
+else:
+    print("Parabéns, você está dirigindo na velocidade permitida")
